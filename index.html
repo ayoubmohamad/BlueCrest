@@ -268,17 +268,18 @@
         </div>
       </div>
 
-      <!-- Concrete Split Showcase -->
-      <div class="split-showcase-container">
-        <div class="split-info">
-          <h3>Real Results: Driveway Mold Restorations</h3>
-          <p>Humid Florida weather causes immediate mold and dark algae accumulation on porous concrete. Our professional driveway pressure washing restores concrete to a bright, safe, clean gray surface, lifting dark mildew stains in minutes.</p>
+      <!-- Real Transformations Gallery CTA Banner -->
+      <div class="gallery-cta-banner">
+        <div class="gallery-cta-info">
+          <h3>View Our Real Cleaning Results</h3>
+          <p>We believe in showing authentic results. Click below to browse our interactive gallery of 10 real before-and-after transformations of siding, patios, driveways, sidewalks, and window cleanings completed across the Tampa Bay Area.</p>
         </div>
-        <div class="split-image-box">
-          <img src="assets/before_after.png" alt="Split concrete driveway cleaning by RichWash" class="split-img">
-          <div class="split-label split-left">Dirty Concrete</div>
-          <div class="split-label split-right">Clean Concrete</div>
-        </div>
+        <button class="btn btn-primary btn-large" id="open-gallery-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-inline" style="margin-right: 10px; width: 22px; height: 22px;">
+            <path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zM8.5 13.5l2.5 3.01L14.5 12l4.5 6H5l3.5-4.5z" fill="currentColor"/>
+          </svg>
+          Open Photo Gallery
+        </button>
       </div>
     </div>
   </section>
@@ -527,6 +528,71 @@
       </div>
     </div>
   </footer>
+
+  <!-- Lightbox Gallery Modal Window -->
+  <div class="gallery-modal" id="gallery-modal" aria-hidden="true" role="dialog">
+    <div class="modal-overlay" id="modal-overlay-close"></div>
+    <div class="modal-container">
+      <button class="modal-close-btn" id="modal-close" aria-label="Close Gallery">&times;</button>
+      
+      <div class="modal-slideshow" id="modal-slideshow-container">
+        <!-- Slide 1 -->
+        <div class="gallery-slide active">
+          <img src="assets/IMG_1340.JPEG" alt="RichWash Before and After Restoration 1" class="modal-img">
+          <div class="slide-caption">Transformation 1 / 10</div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="gallery-slide">
+          <img src="assets/IMG_1341.JPEG" alt="RichWash Before and After Restoration 2" class="modal-img">
+          <div class="slide-caption">Transformation 2 / 10</div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="gallery-slide">
+          <img src="assets/IMG_1342.JPEG" alt="RichWash Before and After Restoration 3" class="modal-img">
+          <div class="slide-caption">Transformation 3 / 10</div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="gallery-slide">
+          <img src="assets/IMG_1343.JPEG" alt="RichWash Before and After Restoration 4" class="modal-img">
+          <div class="slide-caption">Transformation 4 / 10</div>
+        </div>
+        <!-- Slide 5 -->
+        <div class="gallery-slide">
+          <img src="assets/IMG_1344.JPEG" alt="RichWash Before and After Restoration 5" class="modal-img">
+          <div class="slide-caption">Transformation 5 / 10</div>
+        </div>
+        <!-- Slide 6 -->
+        <div class="gallery-slide">
+          <img src="assets/IMG_1345.JPEG" alt="RichWash Before and After Restoration 6" class="modal-img">
+          <div class="slide-caption">Transformation 6 / 10</div>
+        </div>
+        <!-- Slide 7 -->
+        <div class="gallery-slide">
+          <img src="assets/IMG_1347.JPEG" alt="RichWash Before and After Restoration 7" class="modal-img">
+          <div class="slide-caption">Transformation 7 / 10</div>
+        </div>
+        <!-- Slide 8 -->
+        <div class="gallery-slide">
+          <img src="assets/IMG_1349.JPEG" alt="RichWash Before and After Restoration 8" class="modal-img">
+          <div class="slide-caption">Transformation 8 / 10</div>
+        </div>
+        <!-- Slide 9 -->
+        <div class="gallery-slide">
+          <img src="assets/IMG_1350.JPEG" alt="RichWash Before and After Restoration 9" class="modal-img">
+          <div class="slide-caption">Transformation 9 / 10</div>
+        </div>
+        <!-- Slide 10 -->
+        <div class="gallery-slide">
+          <img src="assets/IMG_1351.JPEG" alt="RichWash Before and After Restoration 10" class="modal-img">
+          <div class="slide-caption">Transformation 10 / 10</div>
+        </div>
+      </div>
+      
+      <!-- Slide Navigation Controls -->
+      <button class="slide-nav prev-slide" id="prev-slide" aria-label="Previous Image">&#10094;</button>
+      <button class="slide-nav next-slide" id="next-slide" aria-label="Next Image">&#10095;</button>
+    </div>
+  </div>
 
   <!-- Core Javascript File -->
   <script src="app.js?v=1.3"></script>

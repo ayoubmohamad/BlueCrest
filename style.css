@@ -1676,3 +1676,214 @@ img {
     gap: 16px;
   }
 }
+
+/* ==========================================================================
+   11. Lightbox Photo Gallery Modal
+   ========================================================================== */
+.gallery-cta-banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px;
+  background-color: var(--color-bg-light);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  margin-top: 60px;
+  box-shadow: var(--shadow-md);
+}
+
+.gallery-cta-info {
+  max-width: 650px;
+}
+
+.gallery-cta-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: var(--color-primary);
+}
+
+.gallery-cta-info p {
+  color: var(--color-text-muted);
+  font-size: 1.05rem;
+}
+
+@media (max-width: 768px) {
+  .gallery-cta-banner {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 24px;
+  }
+}
+
+/* Lightbox Modal Window Container */
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.gallery-modal.open {
+  display: flex;
+}
+
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+}
+
+.modal-container {
+  position: relative;
+  z-index: 2010;
+  width: 90%;
+  max-width: 800px;
+  background-color: transparent;
+  border-radius: var(--radius-md);
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: zoomIn 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  background: transparent;
+  border: none;
+  font-size: 2.5rem;
+  color: #FFFFFF;
+  cursor: pointer;
+  line-height: 1;
+  transition: color var(--transition-fast);
+}
+
+.modal-close-btn:hover {
+  color: var(--color-accent);
+}
+
+.modal-slideshow {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  position: relative;
+  background-color: #000000;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+}
+
+.gallery-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-slide.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slide-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+  color: #FFFFFF;
+  padding: 24px 20px 16px 20px;
+  font-family: var(--font-headings);
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.slide-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2020;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  color: #FFFFFF;
+  font-size: 1.5rem;
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  user-select: none;
+  outline: none;
+}
+
+.slide-nav:hover {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.prev-slide {
+  left: -70px;
+}
+
+.next-slide {
+  right: -70px;
+}
+
+@media (max-width: 992px) {
+  .prev-slide { left: 16px; }
+  .next-slide { right: 16px; }
+  .modal-close-btn {
+    top: 16px;
+    right: 16px;
+    z-index: 2030;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 40px;
+    height: 40px;
+    border-radius: var(--radius-full);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

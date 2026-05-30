@@ -271,4 +271,65 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
+  /* --------------------------------------------------------------------------
+     6. LIGHTBOX PHOTO GALLERY SLIDESHOW
+     -------------------------------------------------------------------------- */
+  const openGalleryBtn = document.getElementById('open-gallery-btn');
+  const galleryModal = document.getElementById('gallery-modal');
+  const modalClose = document.getElementById('modal-close');
+  const modalOverlay = document.getElementById('modal-overlay-close');
+  const prevSlideBtn = document.getElementById('prev-slide');
+  const nextSlideBtn = document.getElementById('next-slide');
+  const slides = document.querySelectorAll('.gallery-slide');
+  
+  if (openGalleryBtn && galleryModal && slides.length > 0) {
+    let currentSlideIndex = 0;
+
+    const showSlide = (index) => {
+      // Deactivate current active slide
+      slides[currentSlideIndex].classList.remove('active');
+      
+      // Calculate new index with boundary wrapping
+      currentSlideIndex = (index + slides.length) % slides.length;
+      
+      // Activate new slide
+      slides[currentSlideIndex].classList.add('active');
+    };
+
+    const openModal = () => {
+      galleryModal.classList.add('open');
+      galleryModal.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden'; // Lock background scrolling
+      showSlide(0); // Reset to first slide on open
+    };
+
+    const closeModal = () => {
+      galleryModal.classList.remove('open');
+      galleryModal.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = ''; // Unlock background scrolling
+    };
+
+    // Event listeners for open and close
+    openGalleryBtn.addEventListener('click', openModal);
+    modalClose.addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
+
+    // Arrow navigation clicks
+    nextSlideBtn.addEventListener('click', () => showSlide(currentSlideIndex + 1));
+    prevSlideBtn.addEventListener('click', () => showSlide(currentSlideIndex - 1));
+
+    // Keyboard navigation (Arrow keys and Escape key support)
+    document.addEventListener('keydown', (e) => {
+      if (!galleryModal.classList.contains('open')) return;
+      
+      if (e.key === 'ArrowRight') {
+        showSlide(currentSlideIndex + 1);
+      } else if (e.key === 'ArrowLeft') {
+        showSlide(currentSlideIndex - 1);
+      } else if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+  }
+
 });
