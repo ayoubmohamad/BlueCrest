@@ -594,7 +594,7 @@ img {
    5. Core Services Section
    ========================================================================== */
 .services-section {
-  padding: 100px 0;
+  padding: 65px 0;
   background-color: var(--color-bg-light);
 }
 
@@ -744,12 +744,8 @@ img {
 }
 
 /* ==========================================================================
-   6. Before & After Slider Section
+   6. Before & After Slider Section (Integrated inside Services Section)
    ========================================================================== */
-.gallery-section {
-  padding: 100px 0;
-  background-color: #FFFFFF;
-}
 
 /* Draggable Slider Component Styling */
 .slider-wrapper {
@@ -964,7 +960,7 @@ img {
    7. Why Choose Us Section
    ========================================================================== */
 .why-us-section {
-  padding: 100px 0;
+  padding: 65px 0;
   background-color: var(--color-bg-light);
 }
 
@@ -1103,7 +1099,7 @@ img {
    8. Estimate Form Section
    ========================================================================== */
 .contact-section {
-  padding: 100px 0;
+  padding: 65px 0;
   background-color: #FFFFFF;
 }
 
@@ -1633,8 +1629,8 @@ img {
   }
   
   /* Services & Slider */
-  .services-section, .gallery-section, .why-us-section, .contact-section {
-    padding: 60px 0;
+  .services-section, .why-us-section, .contact-section {
+    padding: 40px 0;
   }
   
   .section-title {
@@ -1686,10 +1682,10 @@ img {
   align-items: center;
   gap: 30px;
   padding: 40px;
-  background-color: var(--color-bg-light);
+  background-color: var(--color-card-bg);
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
-  margin-top: 60px;
+  margin-top: 50px;
   box-shadow: var(--shadow-md);
 }
 
