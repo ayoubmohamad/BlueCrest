@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BLUECREST - INTERACTIVE SCRIPTS & COMPONENT BEHAVIORS
+   RICHWASH - INTERACTIVE SCRIPTS & COMPONENT BEHAVIORS
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {

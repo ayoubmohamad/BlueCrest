@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BLUECREST - BRAND DESIGN SYSTEM & CUSTOM STYLES
+   RICHWASH - BRAND DESIGN SYSTEM & CUSTOM STYLES
    ========================================================================== */
 
 /* 1. Global Custom Variables */
@@ -225,9 +225,14 @@ img {
   cursor: pointer;
 }
 
-.logo-svg {
+.logo-img {
   height: 48px;
   width: auto;
+  transition: height var(--transition-normal);
+}
+
+.site-header.scrolled .logo-img {
+  height: 40px;
 }
 
 /* Desktop Nav Links */
@@ -1388,8 +1393,9 @@ img {
   margin-bottom: 24px;
 }
 
-.footer-logo-link .logo-svg {
-  height: 48px;
+.logo-img-footer {
+  height: 60px;
+  width: auto;
 }
 
 .footer-desc {
