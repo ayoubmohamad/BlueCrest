@@ -4,32 +4,32 @@
 
 /* 1. Global Custom Variables */
 :root {
-  /* Brand Color Palette */
-  --color-primary: #0B2545;       /* Deep Trust Navy */
-  --color-primary-light: #134074; /* Medium Brand Navy */
-  --color-primary-dark: #081c33;  /* Very Dark Navy */
-  --color-secondary: #2563EB;    /* Water/Slate Blue */
+  /* Brand Color Palette - Fresh Ocean & Clean Water */
+  --color-primary: #0F172A;       /* Deep Slate Navy (High Trust) */
+  --color-primary-light: #1E293B; /* Slate Navy Base */
+  --color-primary-dark: #020617;  /* Deep Ocean Navy */
+  --color-secondary: #2563EB;    /* Clear Water Slate Blue */
   --color-secondary-hover: #1D4ED8;
-  --color-accent: #10B981;       /* Vibrant Leaf Green */
-  --color-accent-hover: #059669; /* Rich Accent Green Hover */
-  --color-accent-light: #D1FAE5; /* Light Accent Tint */
+  --color-accent: #0EA5E9;       /* Fresh Sky Blue (Splash Highlight) */
+  --color-accent-hover: #0284C7; /* Rich Sky Blue Hover */
+  --color-accent-light: #E0F2FE; /* Soft Sky Blue Tint */
   
   /* Neutral Color Scale */
-  --color-bg-light: #F8FAFC;     /* Off-White Section Background */
-  --color-card-bg: #FFFFFF;      /* Clean White Card Background */
-  --color-text-main: #1E293B;    /* Slate Charcoal Body Text */
+  --color-bg-light: #F8FAFC;     /* Light Section BG */
+  --color-card-bg: #FFFFFF;      /* Solid White Card BG */
+  --color-text-main: #334155;    /* Slate Charcoal Body Text */
   --color-text-muted: #64748B;   /* Slate Gray Secondary Text */
-  --color-border: #E2E8F0;       /* Divider Gray */
+  --color-border: #E2E8F0;       /* Soft Divider Gray */
   
   /* Typography Scale */
   --font-headings: 'Outfit', sans-serif;
   --font-body: 'Inter', sans-serif;
   
   /* Shadows & Layout Tokens */
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
-  --shadow-lg: 0 10px 25px -5px rgba(11, 37, 69, 0.08), 0 8px 16px -8px rgba(11, 37, 69, 0.05);
-  --shadow-xl: 0 20px 35px -5px rgba(11, 37, 69, 0.12), 0 12px 24px -10px rgba(11, 37, 69, 0.08);
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.04), 0 2px 4px -1px rgba(15, 23, 42, 0.02);
+  --shadow-lg: 0 10px 25px -5px rgba(15, 23, 42, 0.06), 0 8px 16px -8px rgba(15, 23, 42, 0.04);
+  --shadow-xl: 0 20px 35px -5px rgba(15, 23, 42, 0.09), 0 12px 24px -10px rgba(15, 23, 42, 0.06);
   
   --radius-sm: 6px;
   --radius-md: 12px;
@@ -130,7 +130,7 @@ img {
 .btn-primary:hover {
   background-color: var(--color-accent-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.35);
 }
 
 .btn-secondary {
@@ -169,7 +169,7 @@ img {
   font-family: var(--font-headings);
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--color-accent);
+  color: var(--color-accent-hover);
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 12px;
@@ -225,6 +225,7 @@ img {
   cursor: pointer;
 }
 
+/* Custom Scaled Image Logo */
 .logo-img {
   height: 48px;
   width: auto;
@@ -287,13 +288,13 @@ img {
 }
 
 .phone-link:hover {
-  color: var(--color-secondary);
+  color: var(--color-accent);
 }
 
 .phone-icon {
   width: 20px;
   height: 20px;
-  fill: var(--color-secondary);
+  fill: var(--color-accent);
 }
 
 /* Mobile Menu Toggle Button */
@@ -341,7 +342,7 @@ img {
   max-width: 400px;
   height: 100vh;
   background-color: #FFFFFF;
-  box-shadow: -10px 0 30px rgba(0,0,0,0.15);
+  box-shadow: -10px 0 30px rgba(15, 23, 42, 0.15);
   z-index: 999;
   padding: 100px 40px 40px 40px;
   transition: right var(--transition-normal);
@@ -408,7 +409,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(11, 37, 69, 0.95) 0%, rgba(19, 64, 116, 0.8) 50%, rgba(16, 185, 129, 0.15) 100%);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.85) 50%, rgba(14, 165, 233, 0.2) 100%);
   z-index: 1;
 }
 
@@ -436,8 +437,8 @@ img {
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--color-accent);
-  background-color: rgba(16, 185, 129, 0.15);
-  border: 1px solid rgba(16, 185, 129, 0.3);
+  background-color: rgba(14, 165, 233, 0.12);
+  border: 1px solid rgba(14, 165, 233, 0.25);
   padding: 6px 16px;
   border-radius: var(--radius-full);
   margin-bottom: 24px;
@@ -452,10 +453,42 @@ img {
   text-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
+/* Slogan Container Styling */
+.hero-slogan-card {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  padding: 12px 24px;
+  border-radius: var(--radius-sm);
+  margin-bottom: 28px;
+  overflow: hidden;
+}
+
+.slogan-accent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--color-accent);
+}
+
+.hero-slogan {
+  font-family: var(--font-headings);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.5px;
+}
+
 .hero-subtitle {
   font-size: 1.25rem;
   line-height: 1.6;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(241, 245, 249, 0.9);
   margin-bottom: 40px;
 }
 
@@ -471,8 +504,8 @@ img {
   display: inline-flex;
   align-items: center;
   gap: 16px;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   padding: 16px 28px;
   border-radius: var(--radius-md);
@@ -483,7 +516,7 @@ img {
 .hero-contact-card:hover {
   background: rgba(255, 255, 255, 0.15);
   transform: translateY(-2px);
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.25);
 }
 
 .hero-contact-card .card-icon {
@@ -511,7 +544,7 @@ img {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(241, 245, 249, 0.7);
 }
 
 .hero-contact-card .card-number {
@@ -548,7 +581,7 @@ img {
 
 .indicator-label {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(241, 245, 249, 0.85);
 }
 
 .indicator-divider {
@@ -588,12 +621,12 @@ img {
 .service-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-xl);
-  border-color: rgba(37, 99, 235, 0.15);
+  border-color: rgba(14, 165, 233, 0.15);
 }
 
-/* Featured Card Styles (Pressure Washing gets highlighted) */
+/* Featured Card Styles (Pressure Washing / Windows get highlighted) */
 .featured-card {
-  border: 2px solid rgba(37, 99, 235, 0.15);
+  border: 2px solid rgba(14, 165, 233, 0.15);
   box-shadow: var(--shadow-lg);
 }
 
@@ -624,18 +657,18 @@ img {
 .service-icon-wrapper {
   width: 60px;
   height: 60px;
-  background-color: rgba(37, 99, 235, 0.08);
+  background-color: rgba(14, 165, 233, 0.08);
   border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-secondary);
+  color: var(--color-accent-hover);
   margin-bottom: 28px;
   transition: all var(--transition-fast);
 }
 
 .service-card:hover .service-icon-wrapper {
-  background-color: var(--color-secondary);
+  background-color: var(--color-accent);
   color: #FFFFFF;
   transform: scale(1.05);
 }
@@ -696,7 +729,7 @@ img {
 }
 
 .service-link:hover {
-  color: var(--color-secondary);
+  color: var(--color-accent);
 }
 
 .service-link:hover .arrow-icon {
@@ -766,11 +799,10 @@ img {
 .image-before {
   width: 100vw; /* Keeps original size matching canvas */
   max-width: none;
-  /* Filter stack for natural mold, moss, weathering, low-contrast dirt overlay */
   filter: brightness(0.65) contrast(1.1) saturate(0.85) sepia(0.3) hue-rotate(-20deg) grayscale(0.1);
 }
 
-/* SVG Overlay for texture is simulated in CSS or using a noise gradient */
+/* Muddy/moldy organic mottled texture overlay */
 .image-before-wrapper::after {
   content: '';
   position: absolute;
@@ -778,10 +810,9 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  /* Muddy/moldy organic mottled texture overlay */
-  background: radial-gradient(circle at 30% 20%, rgba(26, 46, 5, 0.45) 0%, transparent 60%),
-              radial-gradient(circle at 75% 70%, rgba(20, 20, 10, 0.5) 0%, transparent 50%),
-              linear-gradient(rgba(10, 20, 5, 0.2), rgba(10, 20, 5, 0.2));
+  background: radial-gradient(circle at 30% 20%, rgba(15, 23, 42, 0.45) 0%, transparent 60%),
+              radial-gradient(circle at 75% 70%, rgba(15, 23, 42, 0.5) 0%, transparent 50%),
+              linear-gradient(rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.2));
   mix-blend-mode: multiply;
   pointer-events: none;
   opacity: 0.85;
@@ -792,7 +823,7 @@ img {
   position: absolute;
   top: 20px;
   padding: 6px 16px;
-  background-color: rgba(11, 37, 69, 0.85);
+  background-color: rgba(15, 23, 42, 0.85);
   color: #FFFFFF;
   font-family: var(--font-headings);
   font-weight: 700;
@@ -811,14 +842,14 @@ img {
 
 .after-badge {
   right: 20px;
-  z-index: 15; /* Sits below before-wrapper but above after-img */
+  z-index: 15;
 }
 
 /* Drag Handle Custom Styles */
 .slider-handle {
   position: absolute;
   top: 0;
-  left: 50%; /* Adjusted by JS */
+  left: 50%;
   width: 4px;
   height: 100%;
   background-color: #FFFFFF;
@@ -921,12 +952,12 @@ img {
 
 .split-left {
   left: 20px;
-  background-color: rgba(185, 28, 28, 0.85); /* Reddish label for dirty */
+  background-color: rgba(220, 38, 38, 0.85); /* Reddish label for dirty */
 }
 
 .split-right {
   right: 20px;
-  background-color: rgba(16, 185, 129, 0.85); /* Greenish label for clean */
+  background-color: rgba(14, 165, 233, 0.85); /* Sky blue label for clean */
 }
 
 /* ==========================================================================
@@ -1008,7 +1039,7 @@ img {
   width: 200px;
   height: 200px;
   border-radius: var(--radius-full);
-  background-color: rgba(16, 185, 129, 0.1);
+  background-color: rgba(14, 165, 233, 0.1);
   pointer-events: none;
 }
 
@@ -1019,7 +1050,7 @@ img {
   width: 300px;
   height: 300px;
   border-radius: var(--radius-full);
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
   pointer-events: none;
 }
 
@@ -1035,7 +1066,7 @@ img {
 }
 
 .visual-content p {
-  color: rgba(255,255,255,0.8);
+  color: rgba(241, 245, 249, 0.8);
   margin-bottom: 36px;
   font-size: 1rem;
 }
@@ -1052,7 +1083,7 @@ img {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: rgba(255,255,255,0.6);
+  color: rgba(241, 245, 249, 0.6);
   margin-bottom: 4px;
 }
 
@@ -1134,14 +1165,14 @@ img {
   border: 1px solid var(--color-border);
   background-color: #FFFFFF;
   border-radius: var(--radius-sm);
-  color: var(--color-text-main);
+  color: var(--color-primary);
   transition: all var(--transition-fast);
   outline: none;
 }
 
 .form-control:focus {
-  border-color: var(--color-secondary);
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.12);
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(14, 165, 233, 0.12);
 }
 
 /* Validation Style Errors */
@@ -1166,7 +1197,7 @@ img {
   display: block;
 }
 
-/* Custom Styled Dropdown Drop */
+/* Custom Styled Dropdown */
 .select-control {
   appearance: none;
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
@@ -1200,7 +1231,7 @@ img {
   user-select: none;
   font-size: 0.95rem;
   font-weight: 500;
-  color: var(--color-text-main);
+  color: var(--color-primary);
   padding: 12px 18px;
   background-color: #FFFFFF;
   border: 1px solid var(--color-border);
@@ -1213,7 +1244,6 @@ img {
   border-color: var(--color-text-muted);
 }
 
-/* Hide standard checkbox */
 .checkbox-label input[type="checkbox"] {
   position: absolute;
   opacity: 0;
@@ -1239,7 +1269,6 @@ img {
   border-color: var(--color-accent);
 }
 
-/* Draw checkmark in custom box */
 .custom-checkbox::after {
   content: "";
   display: none;
@@ -1255,14 +1284,14 @@ img {
 }
 
 .checkbox-label input[type="checkbox"]:checked ~ .checkbox-text {
-  color: var(--color-primary);
+  color: var(--color-secondary-hover);
   font-weight: 600;
 }
 
 /* Highlight checked labels */
 .checkbox-label.is-checked {
   border-color: var(--color-accent);
-  background-color: rgba(16, 185, 129, 0.05);
+  background-color: rgba(14, 165, 233, 0.05);
 }
 
 /* Submit Button & Loader */
@@ -1307,7 +1336,7 @@ img {
   width: 80px;
   height: 80px;
   background-color: var(--color-accent-light);
-  color: var(--color-accent);
+  color: var(--color-accent-hover);
   border-radius: var(--radius-full);
   display: flex;
   align-items: center;
@@ -1354,7 +1383,7 @@ img {
 .success-summary p {
   font-size: 0.95rem;
   margin-bottom: 8px;
-  color: var(--color-text-main);
+  color: var(--color-primary);
 }
 
 .success-summary p:last-child {
@@ -1393,6 +1422,7 @@ img {
   margin-bottom: 24px;
 }
 
+/* Footer Image Logo */
 .logo-img-footer {
   height: 60px;
   width: auto;
@@ -1471,13 +1501,13 @@ img {
 .licensing-tag {
   margin-top: 16px;
   display: inline-block;
-  background-color: rgba(16, 185, 129, 0.1);
+  background-color: rgba(14, 165, 233, 0.1);
   color: var(--color-accent);
   padding: 4px 12px;
   font-size: 0.8rem !important;
   font-weight: 700;
   border-radius: var(--radius-full);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  border: 1px solid rgba(14, 165, 233, 0.2);
 }
 
 .area-tag {
@@ -1574,6 +1604,10 @@ img {
   .hero-subtitle {
     font-size: 1.1rem;
     margin-bottom: 30px;
+  }
+  
+  .hero-slogan {
+    font-size: 1.1rem;
   }
   
   .hero-trust-indicators {
