@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlueCrest | Exterior Cleaning, Landscaping & Maintenance Central Florida</title>
+  <meta name="description" content="BlueCrest provides professional pressure washing, soft washing, landscaping, hardscaping, and property maintenance in Central Florida. Commercial and residential solutions. Call 407-837-2001.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Header & Navigation -->
+  <header id="main-header" class="site-header">
+    <div class="container header-container">
+      <a href="#" class="logo-link" aria-label="BlueCrest Home">
+        <!-- Recreated BlueCrest SVG Logo -->
+        <svg class="logo-svg" viewBox="0 0 260 56" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#2563EB" />
+              <stop offset="100%" stop-color="#1E3A8A" />
+            </linearGradient>
+          </defs>
+          <!-- Logo Icon -->
+          <g transform="translate(4, 4)">
+            <rect width="48" height="48" rx="12" fill="url(#logoBlueGrad)" />
+            <!-- The white B shape with evenodd fill rule to cut out counters -->
+            <path d="M 16 12 
+                     H 30 
+                     C 36 12, 39 16, 39 20 
+                     C 39 23.5, 36.5 25.5, 33 26 
+                     C 37.5 26.5, 40 29.5, 40 34 
+                     C 40 39, 36 41, 30 41 
+                     H 16 Z 
+                     M 21 16 
+                     V 24 
+                     H 29 
+                     C 32 24, 34 23, 34 20 
+                     C 34 17, 32 16, 29 16 Z 
+                     M 21 28 
+                     V 37 
+                     H 30 
+                     C 33 37, 35 36, 35 32.5 
+                     C 35 29, 33 28, 30 28 Z" 
+                  fill="#FFFFFF" fill-rule="evenodd" />
+            <!-- Green Leaf Overlay in the bottom loop counter -->
+            <path d="M 23.5 35 
+                     C 25.5 30.5, 29.5 29, 32.5 28.5 
+                     C 31.5 31.5, 30.5 35, 27 36.5 
+                     C 25.5 37, 24.2 36.5, 23.5 35 Z" 
+                  fill="#10B981" />
+          </g>
+          <!-- Logo Text -->
+          <text x="64" y="36" font-family="'Outfit', sans-serif" font-size="24" font-weight="800" fill="#0B2545" letter-spacing="1">BLUECREST</text>
+        </svg>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#why-us" class="nav-link">Why BlueCrest</a></li>
+          <li><a href="#gallery" class="nav-link">Before & After</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Call to Action -->
+      <div class="header-cta">
+        <a href="tel:4078372001" class="phone-link" aria-label="Call BlueCrest">
+          <svg class="phone-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+          </svg>
+          <span>407-837-2001</span>
+        </a>
+        <a href="#contact" class="btn btn-primary" id="header-quote-btn">Get Free Quote</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="mobile-menu-toggle" id="menu-toggle" aria-expanded="false" aria-label="Toggle navigation menu">
+        <span class="bar bar-1"></span>
+        <span class="bar bar-2"></span>
+        <span class="bar bar-3"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Dropdown Navigation -->
+  <div class="mobile-nav-menu" id="mobile-menu">
+    <div class="mobile-nav-links">
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#why-us" class="mobile-nav-link">Why BlueCrest</a>
+      <a href="#gallery" class="mobile-nav-link">Before & After</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <div class="mobile-nav-cta">
+        <a href="tel:4078372001" class="btn btn-secondary mobile-phone-btn">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-inline">
+            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" fill="currentColor"/>
+          </svg>
+          407-837-2001
+        </a>
+        <a href="#contact" class="btn btn-primary mobile-quote-btn">Get Free Quote</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="container hero-container">
+      <div class="hero-content">
+        <span class="hero-tagline">Commercial & Residential Outdoor Services</span>
+        <h1 class="hero-title">Keep Your Property Clean, Green & Pristine</h1>
+        <p class="hero-subtitle">Central Florida's premier choice for expert Pressure Washing, Landscaping, Hardscaping, and Maintenance. We restore and beautify your property with professional-grade care.</p>
+        
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary btn-large">Request an Estimate</a>
+          <a href="#services" class="btn btn-outline btn-large">Our Services</a>
+        </div>
+
+        <!-- Phone Card Micro-interaction -->
+        <div class="hero-contact-card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H4c-.6 0-1 .4-1 1 0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1z" fill="currentColor"/>
+            </svg>
+          </div>
+          <div class="card-text">
+            <span class="card-label">Direct Line (Central Florida)</span>
+            <a href="tel:4078372001" class="card-number">407-837-2001</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Trust Indicators -->
+      <div class="hero-trust-indicators">
+        <div class="indicator-item">
+          <span class="indicator-number">100%</span>
+          <span class="indicator-label">Satisfaction Guarantee</span>
+        </div>
+        <div class="indicator-divider"></div>
+        <div class="indicator-item">
+          <span class="indicator-number">Local</span>
+          <span class="indicator-label">Central Florida Experts</span>
+        </div>
+        <div class="indicator-divider"></div>
+        <div class="indicator-item">
+          <span class="indicator-number">Insured</span>
+          <span class="indicator-label">Commercial & Residential</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Services Section -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Professional Solutions</span>
+        <h2 class="section-title">Our Premium Outdoor Services</h2>
+        <p class="section-desc">From restoring dirty surfaces to styling landscape designs, we provide absolute excellence for your residential or commercial property.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service 1: Pressure Washing (Highlighted) -->
+        <div class="service-card featured-card" id="service-pressure-washing">
+          <div class="card-badge">Highly Requested</div>
+          <div class="service-icon-wrapper">
+            <!-- Customized Water Wave / Spray Icon -->
+            <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 10.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" fill="currentColor"/>
+              <path d="M12 6c-1.66 0-3 1.34-3 3 0 2 3 5.5 3 5.5s3-3.5 3-5.5c0-1.66-1.34-3-3-3z" fill="var(--color-accent)"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Pressure & Soft Washing</h3>
+          <p class="service-text">Blast away layers of mold, algae, and grime. We utilize safe, low-pressure soft washing for roofs and siding, and high-pressure washing for deep-cleaning concrete driveways, sidewalks, and pool decks.</p>
+          <ul class="service-list">
+            <li>Driveways & Sidewalk Cleaning</li>
+            <li>Low-Pressure Roof Cleaning</li>
+            <li>House Siding & Gutters Restoration</li>
+            <li>Pool Screen Enclosures & Decks</li>
+          </ul>
+          <a href="#contact" class="service-link">
+            <span>Get an Estimate</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Service 2: Landscaping -->
+        <div class="service-card" id="service-landscaping">
+          <div class="service-icon-wrapper">
+            <!-- Custom Leaf / Landscape Icon -->
+            <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M17 8C14.24 8 12 10.24 12 13C12 15.76 14.24 18 17 18C19.76 18 22 15.76 22 13V8H17ZM17 16C15.34 16 14 14.66 14 13C14 11.34 15.34 10 17 10H20V13C20 14.66 18.66 16 17 16Z" fill="currentColor"/>
+              <path d="M2 22H22V20H2V22Z" fill="currentColor"/>
+              <path d="M7 18C8.66 18 10 16.66 10 15C10 13.34 8.66 12 7 12C5.34 12 4 13.34 4 15C4 16.66 5.34 18 7 18Z" fill="var(--color-accent)"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Lawn & Landscaping</h3>
+          <p class="service-text">Transform your outdoor green spaces. We design, install, and renew gardens, flower beds, shrubs, and sod to give your residential or commercial property maximum curb appeal.</p>
+          <ul class="service-list">
+            <li>Lawn Design & Installation</li>
+            <li>Sod Replacement & Seeding</li>
+            <li>Mulching & Flower Bed Care</li>
+            <li>Shrub Trimming & Pruning</li>
+          </ul>
+          <a href="#contact" class="service-link">
+            <span>Get an Estimate</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Service 3: Hardscaping -->
+        <div class="service-card" id="service-hardscaping">
+          <div class="service-icon-wrapper">
+            <!-- Custom Bricks / Pavers Icon -->
+            <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-9 14H5v-4h5v4zm0-6H5V8h5v4zm9 6h-7v-4h7v4zm0-6h-7V8h7v4z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Custom Hardscaping</h3>
+          <p class="service-text">Build structural elegance that lasts. Our skilled team designs and crafts stone and brick installations, including modern patios, customized walkways, fire pits, and retaining walls.</p>
+          <ul class="service-list">
+            <li>Paver Patios & Pool Decks</li>
+            <li>Walkways, Pathways & Steps</li>
+            <li>Retaining Walls & Borders</li>
+            <li>Paver Sealing & Restoration</li>
+          </ul>
+          <a href="#contact" class="service-link">
+            <span>Get an Estimate</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Service 4: Maintenance -->
+        <div class="service-card" id="service-maintenance">
+          <div class="service-icon-wrapper">
+            <!-- Custom Calendar / Gears Icon -->
+            <svg class="service-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="service-title">Property Maintenance</h3>
+          <p class="service-text">Keep your residential or commercial outdoor premises looking pristine year-round. Our scheduled maintenance plans provide lawn care, pruning, and seasonal cleaning cycles.</p>
+          <ul class="service-list">
+            <li>Regular Commercial Ground Maintenance</li>
+            <li>Residential Lawn Care Contracts</li>
+            <li>Seasonal Yard Cleanups</li>
+            <li>Hedge & Tree Pruning Schedules</li>
+          </ul>
+          <a href="#contact" class="service-link">
+            <span>Get an Estimate</span>
+            <svg class="arrow-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Before & After Slider Section -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Results</span>
+        <h2 class="section-title">See the Cleaning Power of BlueCrest</h2>
+        <p class="section-desc">Drag the interactive slider below left and right to reveal the dramatic results of our professional pressure washing services on Central Florida properties.</p>
+      </div>
+
+      <!-- Before/After Slider Component -->
+      <div class="slider-wrapper">
+        <div class="slider-container" id="before-after-slider">
+          <!-- After Image (Clean house) -->
+          <img src="assets/hero.png" alt="Freshly cleaned house siding and driveway by BlueCrest" class="slider-img image-after">
+          
+          <!-- Before Image Container (Dirty house overlay, width dynamically changed by JS) -->
+          <div class="image-before-wrapper" id="before-image-wrap">
+            <img src="assets/hero.png" alt="Dirty house siding and driveway before pressure washing" class="slider-img image-before">
+            <div class="before-badge">Before</div>
+          </div>
+          
+          <div class="after-badge">After</div>
+
+          <!-- Drag Handle -->
+          <div class="slider-handle" id="slider-handle">
+            <div class="handle-line"></div>
+            <div class="handle-button">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="handle-arrow-left">
+                <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" fill="currentColor"/>
+              </svg>
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="handle-arrow-right">
+                <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="handle-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Real Concrete Before/After Graphic Split Showcase -->
+      <div class="split-showcase-container">
+        <div class="split-info">
+          <h3>Real Results: Concrete Driveway Restorations</h3>
+          <p>Over time, humid Florida weather creates thick layers of dark mold, dirt, and mildew. Check out the absolute split line difference of a driveway mid-wash. We restore concrete surfaces to like-new condition, enhancing your entire home's aesthetic instantly.</p>
+        </div>
+        <div class="split-image-box">
+          <img src="assets/before_after.png" alt="Split screen comparison of dirty concrete driveway vs clean pressure washed driveway" class="split-img">
+          <div class="split-label split-left">Dirty Concrete</div>
+          <div class="split-label split-right">Clean Concrete</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-us-section" id="why-us">
+    <div class="container">
+      <div class="why-us-grid">
+        <div class="why-us-content">
+          <span class="section-tag">Why Choose Us</span>
+          <h2 class="section-title">The BlueCrest Standard</h2>
+          <p class="why-desc">We combine premium equipment, strict attention to detail, and a commitment to customer service. When you hire BlueCrest, you are hiring trusted outdoor property experts.</p>
+          
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>Advanced Washing Technology</h4>
+              <p>We use eco-friendly cleaning soaps and adjustable pressure washes, ensuring clean surfaces without damaging soft wood, vinyl, or paint.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>Licensed & Fully Insured</h4>
+              <p>Your property is in professional, safe hands. We carry complete liability coverage for residential and large commercial operations.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <h4>Locally Owned in Central Florida</h4>
+              <p>We are a community-focused company proudly serving Central Florida homes, business campuses, and local communities.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Visual Side Card -->
+        <div class="why-us-visual-card">
+          <div class="card-glow"></div>
+          <div class="visual-content">
+            <h3 class="visual-title">Need Immediate Action?</h3>
+            <p>Schedule your exterior pressure wash, garden layout update, or monthly maintenance plan today. Our estimators are standing by.</p>
+            <div class="visual-phone-box">
+              <span class="phone-label">Tap to Speak with Us</span>
+              <a href="tel:4078372001" class="phone-num">407-837-2001</a>
+            </div>
+            <a href="#contact" class="btn btn-primary btn-full">Book Your Estimate Online</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Quote Request Form Section -->
+  <section class="contact-section" id="contact">
+    <div class="container contact-container">
+      <div class="contact-header">
+        <span class="section-tag">Get in Touch</span>
+        <h2 class="section-title">Request a Free Estimate</h2>
+        <p class="section-desc">Fill out our interactive form below. Our estimators will contact you within 24 hours to schedule a visit or provide a transparent, upfront estimate.</p>
+      </div>
+
+      <div class="contact-box">
+        <!-- Form Side -->
+        <div class="quote-form-wrapper">
+          <form id="quote-request-form" class="quote-form" novalidate>
+            <div class="form-grid">
+              
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="form-name" class="form-label">Full Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="text" id="form-name" class="form-control" placeholder="John Doe" required>
+                  <span class="error-msg" id="name-error">Please enter your name</span>
+                </div>
+              </div>
+
+              <!-- Phone Number -->
+              <div class="form-group">
+                <label for="form-phone" class="form-label">Phone Number <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="tel" id="form-phone" class="form-control" placeholder="(407) 123-4567" required>
+                  <span class="error-msg" id="phone-error">Please enter a valid 10-digit phone number</span>
+                </div>
+              </div>
+
+              <!-- Email Address -->
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <input type="email" id="form-email" class="form-control" placeholder="john@example.com" required>
+                  <span class="error-msg" id="email-error">Please enter a valid email address</span>
+                </div>
+              </div>
+
+              <!-- Property Type -->
+              <div class="form-group">
+                <label for="form-property" class="form-label">Property Type <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <select id="form-property" class="form-control select-control" required>
+                    <option value="" disabled selected>Select property type</option>
+                    <option value="Residential">Residential Property</option>
+                    <option value="Commercial">Commercial / Business Campus</option>
+                    <option value="HOA">HOA / Community</option>
+                  </select>
+                  <span class="error-msg" id="property-error">Please select a property type</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Selection Checklist -->
+            <div class="form-group select-services-group">
+              <label class="form-label">Services Needed <span class="sub-label">(Select all that apply)</span></label>
+              <div class="services-checkbox-grid">
+                
+                <label class="checkbox-label" for="svc-pressure">
+                  <input type="checkbox" id="svc-pressure" name="services" value="Pressure Washing">
+                  <span class="custom-checkbox"></span>
+                  <span class="checkbox-text">Pressure & Soft Washing</span>
+                </label>
+
+                <label class="checkbox-label" for="svc-landscape">
+                  <input type="checkbox" id="svc-landscape" name="services" value="Landscaping">
+                  <span class="custom-checkbox"></span>
+                  <span class="checkbox-text">Lawn & Landscaping</span>
+                </label>
+
+                <label class="checkbox-label" for="svc-hardscape">
+                  <input type="checkbox" id="svc-hardscape" name="services" value="Hardscaping">
+                  <span class="custom-checkbox"></span>
+                  <span class="checkbox-text">Custom Hardscaping</span>
+                </label>
+
+                <label class="checkbox-label" for="svc-maintenance">
+                  <input type="checkbox" id="svc-maintenance" name="services" value="Maintenance">
+                  <span class="custom-checkbox"></span>
+                  <span class="checkbox-text">Property Maintenance</span>
+                </label>
+
+              </div>
+              <span class="error-msg" id="services-error">Please select at least one service</span>
+            </div>
+
+            <!-- Message/Details -->
+            <div class="form-group">
+              <label for="form-details" class="form-label">Property Details / Message</label>
+              <textarea id="form-details" rows="4" class="form-control textarea-control" placeholder="Tell us more about your property size, requested schedule, or specific requirements..."></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary btn-large btn-submit" id="submit-btn">
+              <span>Send Request</span>
+              <svg class="btn-loader" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </form>
+
+          <!-- Submit Success Card (Initially hidden) -->
+          <div class="form-success-card" id="form-success">
+            <div class="success-icon-box">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="success-icon">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h3 class="success-title">Estimate Request Received!</h3>
+            <p class="success-text">Thank you for contacting BlueCrest. Our team has received your information and is reviewing your request. We will contact you at the phone number or email provided within 24 hours.</p>
+            <div class="success-summary">
+              <h4>Request Summary:</h4>
+              <p><strong>Name:</strong> <span id="summary-name">-</span></p>
+              <p><strong>Property:</strong> <span id="summary-property">-</span></p>
+              <p><strong>Services:</strong> <span id="summary-services">-</span></p>
+            </div>
+            <button type="button" class="btn btn-outline" id="reset-form-btn">Submit Another Request</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      
+      <!-- Company Column -->
+      <div class="footer-col brand-col">
+        <!-- Recreated White Logo -->
+        <a href="#" class="footer-logo-link" aria-label="BlueCrest Home">
+          <svg class="logo-svg" viewBox="0 0 260 56" xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(4, 4)">
+              <rect width="48" height="48" rx="12" fill="#FFFFFF" />
+              <!-- B text with blue cutouts -->
+              <path d="M 16 12 
+                       H 30 
+                       C 36 12, 39 16, 39 20 
+                       C 39 23.5, 36.5 25.5, 33 26 
+                       C 37.5 26.5, 40 29.5, 40 34 
+                       C 40 39, 36 41, 30 41 
+                       H 16 Z 
+                       M 21 16 
+                       V 24 
+                       H 29 
+                       C 32 24, 34 23, 34 20 
+                       C 34 17, 32 16, 29 16 Z 
+                       M 21 28 
+                       V 37 
+                       H 30 
+                       C 33 37, 35 36, 35 32.5 
+                       C 35 29, 33 28, 30 28 Z" 
+                    fill="#1E40AF" fill-rule="evenodd" />
+              <!-- Leaf shape -->
+              <path d="M 23.5 35 
+                       C 25.5 30.5, 29.5 29, 32.5 28.5 
+                       C 31.5 31.5, 30.5 35, 27 36.5 
+                       C 25.5 37, 24.2 36.5, 23.5 35 Z" 
+                    fill="#10B981" />
+            </g>
+            <text x="64" y="36" font-family="'Outfit', sans-serif" font-size="24" font-weight="800" fill="#FFFFFF" letter-spacing="1">BLUECREST</text>
+          </svg>
+        </a>
+        <p class="footer-desc">Professional, insured property care in Central Florida. Restoring, building, and maintaining pristine commercial and residential spaces.</p>
+        <div class="footer-contact-details">
+          <p class="contact-detail">
+            <strong>Phone:</strong> <a href="tel:4078372001">407-837-2001</a>
+          </p>
+          <p class="contact-detail">
+            <strong>Region:</strong> Central Florida
+          </p>
+        </div>
+      </div>
+
+      <!-- Links Column -->
+      <div class="footer-col links-col">
+        <h4 class="footer-title">Our Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Pressure Washing</a></li>
+          <li><a href="#services">Lawn Care & Mowing</a></li>
+          <li><a href="#services">Landscaping & Mulch</a></li>
+          <li><a href="#services">Pavers & Retaining Walls</a></li>
+          <li><a href="#services">Property Maintenance</a></li>
+        </ul>
+      </div>
+
+      <!-- Hours & Credentials Column -->
+      <div class="footer-col hours-col">
+        <h4 class="footer-title">Hours & Details</h4>
+        <ul class="footer-links hours-list">
+          <li><strong>Monday - Friday:</strong> 7:00 AM - 6:00 PM</li>
+          <li><strong>Saturday:</strong> 8:00 AM - 4:00 PM</li>
+          <li><strong>Sunday:</strong> Closed</li>
+          <li class="licensing-tag">Licensed & Fully Insured</li>
+          <li class="area-tag">Proudly Serving Orange, Osceola, Seminole, Lake, and Volusia Counties</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="container bottom-container">
+        <p class="copyright">&copy; 2026 BlueCrest LLC. All Rights Reserved. </p>
+        <ul class="bottom-links">
+          <li><a href="#services">Terms of Service</a></li>
+          <li><a href="#contact">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Core Javascript File -->
+  <script src="app.js"></script>
+</body>
+</html>
