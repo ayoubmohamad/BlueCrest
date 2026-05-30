@@ -223,17 +223,31 @@ img {
   align-items: center;
   height: 100%;
   cursor: pointer;
+  position: relative;
+  width: 140px; /* Solid anchor width for absolute positioning */
 }
 
-/* Custom Scaled Image Logo */
+/* Prominent Overlapping Badge Logo Design */
 .logo-img {
-  height: 48px;
+  height: 110px; /* Expanded for legibility and premium look */
   width: auto;
-  transition: height var(--transition-normal);
+  position: absolute;
+  top: 8px; /* Positioned to hang below navbar and overlap the hero section */
+  left: 0;
+  background-color: #FFFFFF;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  padding: 10px;
+  z-index: 100;
+  transition: all var(--transition-normal);
 }
 
 .site-header.scrolled .logo-img {
-  height: 40px;
+  height: 85px;
+  top: 4px;
+  padding: 8px;
+  box-shadow: var(--shadow-md);
 }
 
 /* Desktop Nav Links */
