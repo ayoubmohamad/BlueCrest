@@ -594,7 +594,7 @@ img {
    5. Core Services Section
    ========================================================================== */
 .services-section {
-  padding: 65px 0;
+  padding: 60px 0 35px 0;
   background-color: var(--color-bg-light);
 }
 
@@ -960,7 +960,7 @@ img {
    7. Why Choose Us Section
    ========================================================================== */
 .why-us-section {
-  padding: 65px 0;
+  padding: 40px 0;
   background-color: var(--color-bg-light);
 }
 
@@ -1099,7 +1099,7 @@ img {
    8. Estimate Form Section
    ========================================================================== */
 .contact-section {
-  padding: 65px 0;
+  padding: 45px 0;
   background-color: #FFFFFF;
 }
 
